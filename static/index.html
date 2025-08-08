@@ -444,7 +444,7 @@
                 console.log('Sending request:', {
                     num1: Math.floor(firstNumber), // Convert to int as your server expects
                     num2: Math.floor(inputValue),  // Convert to int as your server expects
-                    oprator: operator
+                    operator: operator
                 });
 
                 const response = await fetch('https://calculator-using-go.onrender.com/calc', {
@@ -455,7 +455,7 @@
                     body: JSON.stringify({
                         num1: Math.floor(firstNumber), // Your Go server expects int
                         num2: Math.floor(inputValue),  // Your Go server expects int
-                        oprator: operator
+                        operator: operator
                     })
                 });
 

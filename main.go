@@ -7,9 +7,9 @@ import (
 )
 
 type eqn struct {
-	Num1    int    `json:"num1"`
-	Num2    int    `json:"num2"`
-	Oprator string `json:"oprator"`
+	Num1     int    `json:"num1"`
+	Num2     int    `json:"num2"`
+	Operator string `json:"Operator"`
 }
 
 type welcome string
@@ -35,7 +35,7 @@ func CalcHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	a := eq.Num1
 	b := eq.Num2
-	c := eq.Oprator
+	c := eq.Operator
 	var result int
 	var id string
 	if c == "" {
