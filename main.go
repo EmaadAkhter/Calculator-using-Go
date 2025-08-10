@@ -36,7 +36,7 @@ func CalcHandler(w http.ResponseWriter, r *http.Request) {
 	a := eq.Num1
 	b := eq.Num2
 	c := eq.Operator
-	var result float64
+	var result int
 	var id string
 	if c == "" {
 		http.Error(w, "Missing parameters", http.StatusBadRequest)
